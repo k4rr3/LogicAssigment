@@ -1,0 +1,2 @@
+DIMENSIONS REGION Height: 3 x Length: 3
+Has solution? False
