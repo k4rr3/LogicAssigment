@@ -52,7 +52,7 @@ def solve(path):
             v = sudoku.cells[i][j]
             if v is not None:
                 # - YOUR CODE HERE - 
-                cnf.add_clause([var(j,i,v)])
+                cnf.add_clause([var(i,j,v)])
 
     # Cells: Each Cell contains exactly one value.
     # - YOUR CODE HERE -
@@ -118,5 +118,5 @@ def solve(path):
         visualize(cnf.decode_dimacs(interp), sudoku)
 
 if __name__ == '__main__':
-    #solve(sys.argv[1])
-    solve("exH.txt")
+    solve(sys.argv[1])
+    #solve("test_1.txt")
